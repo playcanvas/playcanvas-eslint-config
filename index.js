@@ -170,9 +170,7 @@ module.exports = {
     "brace-style": "error",
     "camelcase": "off",
     "capitalized-comments": "off",
-    "comma-dangle": [
-      "error", "never"
-    ],
+    "comma-dangle": ["error", "never"],
     "comma-spacing": ["error", { "before": false, "after": true }],
     "comma-style": ["error", "last"],
     "computed-property-spacing": ["error", "never"],
@@ -197,12 +195,8 @@ module.exports = {
       }
     ],
     "jsx-quotes": "off",
-    "key-spacing": [
-      "error", {
-        "beforeColon": false,
-        "afterColon": true
-      }
-    ],
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
     "line-comment-position": "off",
     "linebreak-style": "off",
     "lines-around-comment": "off",
