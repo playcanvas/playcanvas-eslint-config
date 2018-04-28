@@ -75,7 +75,7 @@ module.exports = {
     "consistent-return": "off",
     "curly": "off",
     "default-case": "off",
-    "dot-location": ["error", "object"],
+    "dot-location": ["error", "property"],
     "dot-notation": "error",
     "eqeqeq": "off",
     "guard-for-in": "off",
