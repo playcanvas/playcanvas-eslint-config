@@ -201,7 +201,7 @@ module.exports = {
     "linebreak-style": "off",
     "lines-around-comment": "off",
     "lines-between-class-members": ["error", "always"],
-    "multiline-comment-style": ["warn", "starred-block"],
+    "multiline-comment-style": ["warn", "separate-lines"],
     "new-parens": "error",
     "no-array-constructor": "error",
     "no-bitwise": "off",
