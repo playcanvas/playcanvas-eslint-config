@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-playcanvas",
-  "version": "1.2.0",
+  "name": "@playcanvas/eslint-config",
+  "version": "1.0.0",
   "description": "ESLint configuration used by PlayCanvas",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/playcanvas/eslint-config.git"
+    "url": "git+https://github.com/playcanvas/playcanvas-eslint-config.git"
   },
   "keywords": [
     "eslint",
@@ -19,9 +19,9 @@
   "author": "PlayCanvas <support@playcanvas.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/playcanvas/eslint-config/issues"
+    "url": "https://github.com/playcanvas/playcanvas-eslint-config/issues"
   },
-  "homepage": "https://github.com/playcanvas/eslint-config#readme",
+  "homepage": "https://github.com/playcanvas/playcanvas-eslint-config",
   "peerDependencies": {
     "eslint": ">= 4"
   }
