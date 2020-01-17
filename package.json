@@ -1,6 +1,6 @@
 {
   "name": "@playcanvas/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "PlayCanvas <support@playcanvas.com>",
   "homepage": "https://playcanvas.com",
   "description": "ESLint configuration used by PlayCanvas",
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/playcanvas/playcanvas-eslint-config.git"
   },
-  "devDependencies": {
+  "dependencies": {
     "eslint-plugin-jsdoc": "^20.3.1"
   },
   "scripts": {
