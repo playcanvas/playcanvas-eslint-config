@@ -1,27 +1,30 @@
 {
   "name": "@playcanvas/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "author": "PlayCanvas <support@playcanvas.com>",
+  "homepage": "https://playcanvas.com",
   "description": "ESLint configuration used by PlayCanvas",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/playcanvas/playcanvas-eslint-config.git"
-  },
   "keywords": [
     "eslint",
     "eslintrc",
     "config",
     "playcanvas"
   ],
-  "author": "PlayCanvas <support@playcanvas.com>",
   "license": "MIT",
+  "main": "index.js",
   "bugs": {
     "url": "https://github.com/playcanvas/playcanvas-eslint-config/issues"
   },
-  "homepage": "https://github.com/playcanvas/playcanvas-eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playcanvas/playcanvas-eslint-config.git"
+  },
+  "devDependencies": {
+    "eslint-plugin-jsdoc": "^20.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "peerDependencies": {
     "eslint": ">= 4"
   }
