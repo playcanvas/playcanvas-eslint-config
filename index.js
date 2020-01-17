@@ -49,21 +49,6 @@ module.exports = {
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
     "use-isnan": "error",
-    "valid-jsdoc": [
-      "error", {
-        "prefer": {
-          "return": "returns"
-        },
-        "preferType": {
-          "boolean": "Boolean",
-          "function": "Function",
-          "number": "Number",
-          "object": "Object",
-          "string": "String"
-        },
-        "requireReturn": false
-      }
-    ],
     "valid-typeof": "error",
 
     // Best Practices
@@ -241,8 +226,57 @@ module.exports = {
     "switch-colon-spacing": ["error", {"after": true, "before": false}],
     "template-tag-spacing": "error",
     "unicode-bom": ["error", "never"],
-    "wrap-regex": "off"
+    "wrap-regex": "off",
+
+    // JSDoc rules
+    "jsdoc/check-alignment": "error",
+    "jsdoc/check-examples": "error",
+    "jsdoc/check-indentation": "off",
+    "jsdoc/check-param-names": "off",
+    "jsdoc/check-syntax": "error",
+    "jsdoc/check-tag-names": [
+      "error", {
+        "definedTags": ["component", "field"]
+      }
+    ],
+    "jsdoc/check-types": "error",
+    "jsdoc/implements-on-classes": "error",
+    "jsdoc/match-description": "off",
+    "jsdoc/newline-after-description": "error",
+    "jsdoc/no-types": "off", // Need types on param tags
+    "jsdoc/no-undefined-types": [
+      "error", {
+        "definedTypes": [
+          "pc",
+          "ArrayBuffer",
+          "Float32Array",
+          "Uint8Array",
+          "Uint16Array",
+          "VRDisplay",
+          "VRDisplayCapabilities",
+          "VRFrameData"
+        ]
+      }
+    ],
+    "jsdoc/require-description": "off",
+    "jsdoc/require-description-complete-sentence": "off",
+    "jsdoc/require-example": "off",
+    "jsdoc/require-hyphen-before-param-description": ["error", "always"],
+    "jsdoc/require-jsdoc": "off", // Not everything needs to be documented
+    "jsdoc/require-param": "error",
+    "jsdoc/require-param-description": "error",
+    "jsdoc/require-param-name": "error",
+    "jsdoc/require-param-type": "error",
+    "jsdoc/require-returns": "error",
+    "jsdoc/require-returns-check": "error",
+    "jsdoc/require-returns-description": "error",
+    "jsdoc/require-returns-type": "error",
+    "jsdoc/valid-types": "off"
   },
+
+  "plugins": [
+    "jsdoc"
+  ],
 
   "env": {
     "browser": true,
