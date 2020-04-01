@@ -256,6 +256,11 @@ module.exports = {
           "Float32Array",
           "Uint8Array",
           "Uint16Array",
+          "Int8Array",
+          "Uint8ClampedArray",
+          "Int16Array",
+          "Int32Array",
+          "Uint32Array",
           "VRDisplay",
           "VRDisplayCapabilities",
           "VRFrameData"
