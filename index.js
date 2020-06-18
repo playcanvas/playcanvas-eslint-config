@@ -1,8 +1,8 @@
 module.exports = {
 
   "parserOptions": {
-    "ecmaVersion": 5,
-    "sourceType": "script",
+    "ecmaVersion": 2015,
+    "sourceType": "module",
     "ecmaFeatures": {}
   },
 
@@ -88,7 +88,7 @@ module.exports = {
     "no-implicit-coercion": "off",
     "no-implicit-globals": "error",
     "no-implied-eval": "error",
-    "no-invalid-this": "error",
+    "no-invalid-this": "off",
     "no-iterator": "error",
     "no-labels": "error",
     "no-lone-blocks": "error",
