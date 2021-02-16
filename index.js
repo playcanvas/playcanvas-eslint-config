@@ -248,25 +248,7 @@ module.exports = {
     "jsdoc/match-description": "off",
     "jsdoc/newline-after-description": "error",
     "jsdoc/no-types": "off", // Need types on param tags
-    "jsdoc/no-undefined-types": [
-      "error", {
-        "definedTypes": [
-          "pc",
-          "ArrayBuffer",
-          "Float32Array",
-          "Int16Array",
-          "Int32Array",
-          "Int8Array",
-          "Uint16Array",
-          "Uint32Array",
-          "Uint8Array",
-          "Uint8ClampedArray",
-          "VRDisplay",
-          "VRDisplayCapabilities",
-          "VRFrameData"
-        ]
-      }
-    ],
+    "jsdoc/no-undefined-types": "off",
     "jsdoc/require-description": "off",
     "jsdoc/require-description-complete-sentence": "off",
     "jsdoc/require-example": "off",
