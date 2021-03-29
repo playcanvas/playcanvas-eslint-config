@@ -19,6 +19,12 @@
     "type": "git",
     "url": "git+https://github.com/playcanvas/playcanvas-eslint-config.git"
   },
+  "files": [
+    "LICENSE",
+    "index.js",
+    "package.json",
+    "README.md"
+  ],
   "dependencies": {
     "eslint-plugin-jsdoc": "^32.3.0"
   },
