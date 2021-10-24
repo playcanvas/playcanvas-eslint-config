@@ -1,6 +1,6 @@
 {
   "name": "@playcanvas/eslint-config",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "PlayCanvas <support@playcanvas.com>",
   "homepage": "https://playcanvas.com",
   "description": "ESLint configuration used by PlayCanvas",
@@ -26,7 +26,7 @@
     "README.md"
   ],
   "dependencies": {
-    "eslint-plugin-jsdoc": "^32.3.0"
+    "eslint-plugin-jsdoc": "^37.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
