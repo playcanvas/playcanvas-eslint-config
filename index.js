@@ -267,7 +267,7 @@ module.exports = {
     "no-extra-parens": ["error", "functions"],
     "no-mixed-spaces-and-tabs": "error",
     "no-multi-spaces": [
-      "off", {
+      "error", {
         "ignoreEOLComments": true,
         "exceptions": {
           "ArrayExpression": true,
