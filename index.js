@@ -228,7 +228,11 @@ module.exports = {
     "array-bracket-newline": ["error", "consistent"],
     "array-bracket-spacing": ["error", "never"],
     "array-element-newline": "off",
-    "arrow-parens": ["error", "as-needed"],
+    "arrow-parens": [
+      "error", "as-needed", {
+        "requireForBlockBody": true
+      }
+    ],
     "arrow-spacing": "error",
     "block-spacing": "error",
     "brace-style": "error",
