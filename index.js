@@ -228,7 +228,7 @@ module.exports = {
     "array-bracket-newline": ["error", "consistent"],
     "array-bracket-spacing": ["error", "never"],
     "array-element-newline": "off",
-    "arrow-parens": ["error", "always"],
+    "arrow-parens": ["error", "as-needed"],
     "arrow-spacing": "error",
     "block-spacing": "error",
     "brace-style": "error",
@@ -266,7 +266,20 @@ module.exports = {
     "newline-per-chained-call": "off",
     "no-extra-parens": ["error", "functions"],
     "no-mixed-spaces-and-tabs": "error",
-    "no-multi-spaces": "off",
+    "no-multi-spaces": [
+      "error", {
+        "ignoreEOLComments": true,
+        "exceptions": {
+          "ArrayExpression": true,
+          "AssignmentExpression": true,
+          "BinaryExpression": true,
+          "IfStatement": true,
+          "LogicalExpression": true,
+          "SwitchCase": true,
+          "VariableDeclarator": true
+        }
+      }
+    ],
     "no-multiple-empty-lines": ["error", { "max": 2, "maxBOF": 0, "maxEOF": 0 }],
     "no-tabs": "error",
     "no-trailing-spaces": "error",
@@ -333,12 +346,16 @@ module.exports = {
     "jsdoc/no-bad-blocks": "off",
     "jsdoc/no-defaults": "off",
     "jsdoc/no-missing-syntax": "off",
-    "jsdoc/no-multi-asterisks": "off",
+    "jsdoc/no-multi-asterisks": "error",
     "jsdoc/no-restricted-syntax": "off",
     "jsdoc/no-types": "off",
     "jsdoc/no-undefined-types": "off",
-    "jsdoc/require-asterisk-prefix": "off",
-    "jsdoc/require-description-complete-sentence": "off",
+    "jsdoc/require-asterisk-prefix": "error",
+    "jsdoc/require-description-complete-sentence": [
+      "off", {
+        "abbreviations": ["e.g."]
+      }
+    ],
     "jsdoc/require-description": "off",
     "jsdoc/require-example": "off",
     "jsdoc/require-file-overview": "off",
