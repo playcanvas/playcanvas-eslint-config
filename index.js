@@ -54,7 +54,7 @@ module.exports = {
     "no-sparse-arrays": "error",
     "no-template-curly-in-string": "error",
     "no-this-before-super": "error",
-    "no-undef": "off",
+    "no-undef": "error",
     "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "error",
     "no-unreachable": "error",
@@ -62,13 +62,17 @@ module.exports = {
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
     "no-unsafe-optional-chaining": "error",
-    "no-unused-private-class-members": "off", // update to error (requires eslint 8.1.0)
+    "no-unused-private-class-members": "error",
     "no-unused-vars": [
-      "warn", {
+      "error", {
         "args": "none"
       }
     ],
-    "no-use-before-define": ["error", { "functions": false }],
+    "no-use-before-define": [
+      "error", {
+        "functions": false
+      }
+    ],
     "no-useless-backreference": "error",
     "require-atomic-updates": "error",
     "use-isnan": "error",
@@ -218,7 +222,11 @@ module.exports = {
     "sort-imports": "off",
     "sort-keys": "off",
     "sort-vars": "off",
-    "spaced-comment": ["error", "always", { "exceptions": ["/"] }],
+    "spaced-comment": [
+      "error", "always", {
+        "exceptions": ["/"]
+      }
+    ],
     "strict": "error",
     "symbol-description": "error",
     "vars-on-top": "off",
@@ -237,7 +245,12 @@ module.exports = {
     "block-spacing": "error",
     "brace-style": "error",
     "comma-dangle": ["error", "never"],
-    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-spacing": [
+      "error", {
+        "before": false,
+        "after": true
+      }
+    ],
     "comma-style": ["error", "last"],
     "computed-property-spacing": ["error", "never"],
     "dot-location": ["error", "property"],
@@ -257,8 +270,18 @@ module.exports = {
       }
     ],
     "jsx-quotes": "off",
-    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
-    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "key-spacing": [
+      "error", {
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "keyword-spacing": [
+      "error", {
+        "before": true,
+        "after": true
+      }
+    ],
     "line-comment-position": "off",
     "linebreak-style": "off",
     "lines-around-comment": "off",
@@ -284,26 +307,52 @@ module.exports = {
         }
       }
     ],
-    "no-multiple-empty-lines": ["error", { "max": 2, "maxBOF": 0, "maxEOF": 0 }],
+    "no-multiple-empty-lines": [
+      "error", {
+        "max": 2,
+        "maxBOF": 0,
+        "maxEOF": 0
+      }
+    ],
     "no-tabs": "error",
     "no-trailing-spaces": "error",
     "no-whitespace-before-property": "error",
     "nonblock-statement-body-position": "off",
-    "object-curly-newline": ["error", { "consistent": true }],
+    "object-curly-newline": [
+      "error", {
+        "consistent": true
+      }
+    ],
     "object-curly-spacing": ["error", "always"],
-    "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }],
+    "object-property-newline": [
+      "error", {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
     "operator-linebreak": ["error", "after"],
-    "padded-blocks": ["error", {
-      "classes": "never"
-    }],
+    "padded-blocks": [
+      "error", {
+        "classes": "never"
+      }
+    ],
     "padding-line-between-statements": "off",
     "quotes": ["off", "single"],
     "rest-spread-spacing": "error",
     "semi": ["error", "always"],
-    "semi-spacing": [ "error", { "before": false, "after": true } ],
+    "semi-spacing": [
+      "error", {
+        "before": false,
+        "after": true
+      }
+    ],
     "semi-style": ["error", "last"],
     "space-before-blocks": "error",
-    "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }],
+    "space-before-function-paren": [
+      "error", {
+        "anonymous": "always",
+        "named": "never"
+      }
+    ],
     "space-in-parens": ["error", "never"],
     "space-infix-ops": [
       "error", {
@@ -317,7 +366,12 @@ module.exports = {
         "overrides": {
         }
     }],
-    "switch-colon-spacing": ["error", {"after": true, "before": false}],
+    "switch-colon-spacing": [
+      "error", {
+        "after": true,
+        "before": false
+      }
+    ],
     "template-curly-spacing": "error",
     "template-tag-spacing": "error",
     "unicode-bom": ["error", "never"],
@@ -364,7 +418,7 @@ module.exports = {
     "jsdoc/require-example": "off",
     "jsdoc/require-file-overview": "off",
     "jsdoc/require-hyphen-before-param-description": ["error", "always"],
-    "jsdoc/require-jsdoc": "off", // Not everything needs to be documented
+    "jsdoc/require-jsdoc": "off",
     "jsdoc/require-param-description": "error",
     "jsdoc/require-param-name": "error",
     "jsdoc/require-param-type": "error",
@@ -390,6 +444,7 @@ module.exports = {
 
   "env": {
     "browser": true,
+    "es6": true,
     "node": true
   }
 
