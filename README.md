@@ -6,6 +6,19 @@ The configuration is defined in [`index.js`][index]. It configures ESLint's rule
 
 The configuration attempts to enable as many rules as possible, particularly those categorized as 'recommended' by ESLint.
 
+## Using this config in your own projects
+
+Edit your project's `package.json` file:
+
+1. Add `eslint` and `@playcanvas/eslint-config` to your `devDependencies` section.
+2. Add an `eslintConfig` section. At a minimum, you will need:
+
+```json
+    "eslintConfig": {
+        "extends": "@playcanvas/eslint-config"
+    },
+```
+
 [engine]: https://github.com/playcanvas/engine
 [index]: https://github.com/playcanvas/playcanvas-eslint-config/blob/master/index.js
 [rules]: https://eslint.org/docs/rules/
