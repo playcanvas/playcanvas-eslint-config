@@ -97,7 +97,7 @@ module.exports = {
     "func-name-matching": "error",
     "func-names": "off",
     "func-style": "off",
-    "grouped-accessor-pairs": "error",
+    "grouped-accessor-pairs": ["error", "setBeforeGet"],
     "guard-for-in": "off",
     "id-denylist": "off",
     "id-length": "off",
