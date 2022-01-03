@@ -1,7 +1,7 @@
 module.exports = {
 
   "parserOptions": {
-    "ecmaVersion": 2015,
+    "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {}
   },
@@ -384,24 +384,20 @@ module.exports = {
     "jsdoc/check-alignment": "error",
     "jsdoc/check-examples": "off",
     "jsdoc/check-indentation": "off",
-    "jsdoc/check-line-alignment": "off",
+    "jsdoc/check-line-alignment": "error",
     "jsdoc/check-param-names": "off",
     "jsdoc/check-property-names": "error",
     "jsdoc/check-syntax": "error",
-    "jsdoc/check-tag-names": [
-      "error", {
-        "definedTags": ["component", "field"]
-      }
-    ],
+    "jsdoc/check-tag-names": "error",
     "jsdoc/check-types": "error",
     "jsdoc/check-values": "error",
     "jsdoc/empty-tags": "error",
     "jsdoc/implements-on-classes": "error",
     "jsdoc/match-description": "off",
     "jsdoc/match-name": "off",
-    "jsdoc/multiline-blocks": "off",
+    "jsdoc/multiline-blocks": "error",
     "jsdoc/newline-after-description": "error",
-    "jsdoc/no-bad-blocks": "off",
+    "jsdoc/no-bad-blocks": "error",
     "jsdoc/no-defaults": "off",
     "jsdoc/no-missing-syntax": "off",
     "jsdoc/no-multi-asterisks": "error",
@@ -432,8 +428,8 @@ module.exports = {
     "jsdoc/require-returns-type": "error",
     "jsdoc/require-returns": "error",
     "jsdoc/require-throws": "off",
-    "jsdoc/require-yields": "off",
-    "jsdoc/require-yields-check": "off",
+    "jsdoc/require-yields": "error",
+    "jsdoc/require-yields-check": "error",
     "jsdoc/tag-lines": "off",
     "jsdoc/valid-types": "off"
   },
