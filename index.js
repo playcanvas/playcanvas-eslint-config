@@ -58,7 +58,7 @@ module.exports = {
     "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "error",
     "no-unreachable": "error",
-    "no-unreachable-loop": "off",
+    "no-unreachable-loop": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
     "no-unsafe-optional-chaining": "error",
