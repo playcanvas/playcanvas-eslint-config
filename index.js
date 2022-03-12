@@ -438,6 +438,12 @@ module.exports = {
     "jsdoc"
   ],
 
+  "settings": {
+    "jsdoc": {
+      "mode": "typescript"
+    }
+  },
+
   "env": {
     "browser": true,
     "es6": true,
