@@ -19,6 +19,7 @@ module.exports = {
     "no-compare-neg-zero": "error",
     "no-cond-assign": "error",
     "no-const-assign": "error",
+    "no-constant-binary-expression": "error",
     "no-constant-condition": [
       "error", {
         "checkLoops": false
@@ -93,7 +94,7 @@ module.exports = {
     "default-case-last": "off",
     "default-param-last": "off",
     "dot-notation": "error",
-    "eqeqeq": "off",
+    "eqeqeq": ["error", "smart"],
     "func-name-matching": "error",
     "func-names": "off",
     "func-style": "off",
@@ -208,6 +209,7 @@ module.exports = {
     "prefer-exponentiation-operator": "off",
     "prefer-named-capture-group": "off",
     "prefer-numeric-literals": "error",
+    "prefer-object-has-own": "off",
     "prefer-object-spread": "off",
     "prefer-promise-reject-errors": "error",
     "prefer-regex-literals": "off",
@@ -430,6 +432,7 @@ module.exports = {
     "jsdoc/require-throws": "off",
     "jsdoc/require-yields": "error",
     "jsdoc/require-yields-check": "error",
+    "jsdoc/sort-tags": "off",
     "jsdoc/tag-lines": "off",
     "jsdoc/valid-types": "off"
   },
