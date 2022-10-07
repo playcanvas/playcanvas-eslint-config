@@ -381,6 +381,20 @@ module.exports = {
     "wrap-regex": "off",
     "yield-star-spacing": "error",
 
+    // Import rules
+
+    // Static Analysis
+    "import/no-unresolved": "error",
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/default": "error",
+    "import/export": "error",
+
+    // Helpful Warnings
+    "import/no-named-as-default": "warn",
+    "import/no-named-as-default-member": "warn",
+    "import/no-duplicates": "warn",
+
     // JSDoc rules
     "jsdoc/check-access": "error",
     "jsdoc/check-alignment": "error",
@@ -438,6 +452,7 @@ module.exports = {
   },
 
   "plugins": [
+    "import",
     "jsdoc"
   ],
 
