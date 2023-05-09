@@ -409,11 +409,13 @@ module.exports = {
     "jsdoc/check-values": "error",
     "jsdoc/empty-tags": "error",
     "jsdoc/implements-on-classes": "error",
+    "jsdoc/informative-docs": "off",
     "jsdoc/match-description": "off",
     "jsdoc/match-name": "off",
     "jsdoc/multiline-blocks": "error",
     "jsdoc/newline-after-description": "error",
     "jsdoc/no-bad-blocks": "error",
+    "jsdoc/no-blank-block-descriptions": "error",
     "jsdoc/no-defaults": "off",
     "jsdoc/no-missing-syntax": "off",
     "jsdoc/no-multi-asterisks": "error",
@@ -421,28 +423,28 @@ module.exports = {
     "jsdoc/no-types": "off",
     "jsdoc/no-undefined-types": "off",
     "jsdoc/require-asterisk-prefix": "error",
+    "jsdoc/require-description": "off",
     "jsdoc/require-description-complete-sentence": [
       "off", {
         "abbreviations": ["e.g."]
       }
     ],
-    "jsdoc/require-description": "off",
     "jsdoc/require-example": "off",
     "jsdoc/require-file-overview": "off",
     "jsdoc/require-hyphen-before-param-description": ["error", "always"],
     "jsdoc/require-jsdoc": "off",
+    "jsdoc/require-param": "error",
     "jsdoc/require-param-description": "error",
     "jsdoc/require-param-name": "error",
     "jsdoc/require-param-type": "error",
-    "jsdoc/require-param": "error",
     "jsdoc/require-property": "error",
     "jsdoc/require-property-description": "error",
     "jsdoc/require-property-name": "error",
     "jsdoc/require-property-type": "error",
+    "jsdoc/require-returns": "error",
     "jsdoc/require-returns-check": "error",
     "jsdoc/require-returns-description": "error",
     "jsdoc/require-returns-type": "error",
-    "jsdoc/require-returns": "error",
     "jsdoc/require-throws": "off",
     "jsdoc/require-yields": "error",
     "jsdoc/require-yields-check": "error",
@@ -465,7 +467,8 @@ module.exports = {
   "env": {
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "worker": true
   }
 
 };
