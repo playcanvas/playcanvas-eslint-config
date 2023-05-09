@@ -413,7 +413,6 @@ module.exports = {
     "jsdoc/match-description": "off",
     "jsdoc/match-name": "off",
     "jsdoc/multiline-blocks": "error",
-    "jsdoc/newline-after-description": "error",
     "jsdoc/no-bad-blocks": "error",
     "jsdoc/no-blank-block-descriptions": "error",
     "jsdoc/no-defaults": "off",
