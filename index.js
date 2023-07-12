@@ -405,7 +405,7 @@ module.exports = {
     "jsdoc/check-property-names": "error",
     "jsdoc/check-syntax": "error",
     "jsdoc/check-tag-names": "error",
-    "jsdoc/check-types": "error",
+    "jsdoc/check-types": "off",
     "jsdoc/check-values": "error",
     "jsdoc/empty-tags": "error",
     "jsdoc/implements-on-classes": "error",
@@ -465,7 +465,7 @@ module.exports = {
 
   "env": {
     "browser": true,
-    "es6": true,
+    "es2020": true,
     "node": true,
     "worker": true
   }
