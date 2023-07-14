@@ -103,6 +103,12 @@ module.exports = {
     "id-denylist": "off",
     "id-length": "off",
     "id-match": "off",
+    "import/extensions": [
+      "error", {
+        "js": "always",
+        "mjs": "always",
+      }
+    ],
     "init-declarations": "off",
     "max-classes-per-file": "off",
     "max-depth": "off",
