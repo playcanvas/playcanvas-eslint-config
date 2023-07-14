@@ -383,16 +383,19 @@ module.exports = {
 
     // Import rules
 
-    // Static Analysis
-    "import/no-unresolved": "error",
+    // Static analysis
+    "import/default": "error",
     "import/named": "error",
     "import/namespace": "error",
-    "import/default": "error",
-    "import/export": "error",
+    "import/no-unresolved": "error",
 
-    // Helpful Warnings
+    // Helpful warnings
+    "import/export": "error",
     "import/no-named-as-default": "warn",
     "import/no-named-as-default-member": "warn",
+
+    // Style guide
+    "import/extensions": ["error", "always"],
     "import/no-duplicates": "warn",
 
     // JSDoc rules
