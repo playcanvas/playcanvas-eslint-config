@@ -1,7 +1,7 @@
 module.exports = {
 
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {}
   },
