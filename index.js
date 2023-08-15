@@ -418,7 +418,8 @@ module.exports = {
     "jsdoc/multiline-blocks": "error",
     "jsdoc/no-bad-blocks": "error",
     "jsdoc/no-blank-block-descriptions": "error",
-    "jsdoc/no-defaults": "off",
+    "jsdoc/no-blank-blocks": "error",
+    "jsdoc/no-defaults": "error",
     "jsdoc/no-missing-syntax": "off",
     "jsdoc/no-multi-asterisks": "error",
     "jsdoc/no-restricted-syntax": "off",
@@ -452,6 +453,7 @@ module.exports = {
     "jsdoc/require-yields-check": "error",
     "jsdoc/sort-tags": "off",
     "jsdoc/tag-lines": "off",
+    "jsdoc/text-escaping": "off",
     "jsdoc/valid-types": "off"
   },
 
