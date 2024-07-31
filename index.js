@@ -6,6 +6,10 @@ module.exports = {
     "ecmaFeatures": {}
   },
 
+  "extends": [
+    "plugin:regexp/recommended"
+  ],
+
   // Rules reference: https://eslint.org/docs/rules/
   "rules": {
     // Possible Problems
@@ -90,7 +94,7 @@ module.exports = {
     "complexity": "off",
     "consistent-return": "off",
     "consistent-this": "off",
-    "curly": "off",
+    "curly": ["error", "multi-line"],
     "default-case": "off",
     "default-case-last": "off",
     "default-param-last": "off",
@@ -205,7 +209,7 @@ module.exports = {
     "one-var": "off",
     "one-var-declaration-per-line": "off",
     "operator-assignment": ["error", "always"],
-    "prefer-arrow-callback": "off",
+    "prefer-arrow-callback": "error",
     "prefer-const": "error",
     "prefer-destructuring": "off",
     "prefer-exponentiation-operator": "off",
@@ -217,7 +221,7 @@ module.exports = {
     "prefer-regex-literals": "off",
     "prefer-rest-params": "off",
     "prefer-spread": "warn",
-    "prefer-template": "off",
+    "prefer-template": "error",
     "quote-props": "off",
     "radix": "error",
     "require-await": "error",
@@ -266,10 +270,10 @@ module.exports = {
     "implicit-arrow-linebreak": "error",
     "indent": [
       "error", 4, {
+        "CallExpression": { "arguments": "first" },
+        "FunctionExpression": { "body": 1, "parameters": 2 },
+        "MemberExpression": 0,
         "SwitchCase": 1,
-        "CallExpression": {
-          "arguments": "first"
-        },
         "ignoreComments": true
       }
     ],
@@ -390,6 +394,11 @@ module.exports = {
     "import/named": "error",
     "import/namespace": "error",
     "import/no-unresolved": "error",
+    "import/order": ["error", {
+      "groups": ["builtin", "external", "internal", ["parent", "sibling"], "index", "unknown"],
+      "newlines-between": "always",
+      "alphabetize": { "order": "asc", "caseInsensitive": true }
+    }],
 
     // Helpful warnings
     "import/export": "error",
