@@ -414,7 +414,7 @@ module.exports = {
     "jsdoc/check-param-names": "off",
     "jsdoc/check-property-names": "error",
     "jsdoc/check-syntax": "error",
-    "jsdoc/check-tag-names": "error",
+    "jsdoc/check-tag-names": ["error", { "definedTags": ["import"] }],
     "jsdoc/check-types": "off",
     "jsdoc/check-values": "error",
     "jsdoc/empty-tags": "error",
