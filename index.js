@@ -340,7 +340,7 @@ module.exports = {
       }
     ],
     "padding-line-between-statements": "off",
-    "quotes": ["off", "single"],
+    "quotes": ["error", "single"],
     "rest-spread-spacing": "error",
     "semi": ["error", "always"],
     "semi-spacing": [
