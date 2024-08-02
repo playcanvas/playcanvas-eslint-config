@@ -264,15 +264,7 @@ module.exports = {
     "function-paren-newline": "off",
     "generator-star-spacing": "error",
     "implicit-arrow-linebreak": "error",
-    "indent": [
-      "error", 4, {
-        "CallExpression": { "arguments": "first" },
-        "FunctionExpression": { "body": 1, "parameters": 2 },
-        "MemberExpression": 0,
-        "SwitchCase": 1,
-        "ignoreComments": true
-      }
-    ],
+    "indent": ["error", 4, { "SwitchCase": 1 }],
     "jsx-quotes": "off",
     "key-spacing": [
       "error", {
