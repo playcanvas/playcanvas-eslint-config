@@ -264,7 +264,10 @@ module.exports = {
     "function-paren-newline": "off",
     "generator-star-spacing": "error",
     "implicit-arrow-linebreak": "error",
-    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "indent": ["error", 4, {
+      "MemberExpression": 0,
+      "SwitchCase": 1
+    }],
     "jsx-quotes": "off",
     "key-spacing": [
       "error", {
