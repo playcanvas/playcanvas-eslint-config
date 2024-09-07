@@ -69,7 +69,8 @@ export default [
       "no-unused-private-class-members": "error",
       "no-unused-vars": [
         "error", {
-          "args": "none"
+          "args": "none",
+          "caughtErrors": "none"
         }
       ],
       "no-use-before-define": [
