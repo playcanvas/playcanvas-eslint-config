@@ -5,13 +5,13 @@
   "homepage": "https://playcanvas.com",
   "description": "ESLint configuration used by PlayCanvas",
   "keywords": [
+    "config",
     "eslint",
     "eslintrc",
-    "config",
     "playcanvas"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "eslint.config.mjs",
   "bugs": {
     "url": "https://github.com/playcanvas/playcanvas-eslint-config/issues"
   },
@@ -21,7 +21,7 @@
   },
   "files": [
     "LICENSE",
-    "index.js",
+    "eslint.config.mjs",
     "package.json",
     "README.md"
   ],
@@ -34,6 +34,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "eslint": ">= 4"
+    "eslint": ">= 8"
   }
 }
