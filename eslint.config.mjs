@@ -200,7 +200,7 @@ export default [
       "no-useless-escape": "off",
       "no-useless-rename": "error",
       "no-useless-return": "error",
-      "no-var": "off", // update to error
+      "no-var": "error",
       "no-void": "error",
       "no-warning-comments": "off",
       "no-with": "error",
