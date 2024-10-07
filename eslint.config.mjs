@@ -5,14 +5,14 @@ import regexpPlugin from 'eslint-plugin-regexp';
 // ESM Script supported JSDoc tags 
 const esmScriptTags = [
   'attribute', 
-  'resource'
-  'color'
-  'curves'
-  'range'
-  'placeholder'
-  'precision'
-  'size'
-  'step'
+  'resource',
+  'color',
+  'curves',
+  'range',
+  'placeholder',
+  'precision',
+  'size',
+  'step',
   'title'
 ]
 
