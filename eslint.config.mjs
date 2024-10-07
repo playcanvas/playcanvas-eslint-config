@@ -2,6 +2,20 @@ import jsdocPlugin from 'eslint-plugin-jsdoc';
 // import importPlugin from 'eslint-plugin-import';
 import regexpPlugin from 'eslint-plugin-regexp';
 
+// ESM Script supported JSDoc tags 
+const esmScriptTags = [
+  'attribute', 
+  'resource'
+  'color'
+  'curves'
+  'range'
+  'placeholder'
+  'precision'
+  'size'
+  'step'
+  'title'
+]
+
 export default [
   {
     plugins: {
@@ -414,7 +428,7 @@ export default [
       "jsdoc/check-param-names": "off",
       "jsdoc/check-property-names": "error",
       "jsdoc/check-syntax": "error",
-      "jsdoc/check-tag-names": ["error", { "definedTags": ["attribute", "category", "import"] }],
+      "jsdoc/check-tag-names": ["error", { "definedTags": [...esmScriptTags, "category", "import"] }],
       "jsdoc/check-types": "off",
       "jsdoc/check-values": "error",
       "jsdoc/empty-tags": "error",
