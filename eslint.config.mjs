@@ -1,5 +1,5 @@
 import jsdocPlugin from 'eslint-plugin-jsdoc';
-// import importPlugin from 'eslint-plugin-import';
+import importPlugin from 'eslint-plugin-import';
 import regexpPlugin from 'eslint-plugin-regexp';
 
 // ESM Script supported JSDoc tags 
@@ -19,7 +19,7 @@ const esmScriptTags = [
 export default [
   {
     plugins: {
-//      import: importPlugin,
+      import: importPlugin,
       jsdoc: jsdocPlugin,
       regexp: regexpPlugin
     },
@@ -395,7 +395,6 @@ export default [
       "wrap-regex": "off",
       "yield-star-spacing": "error",
 
-      /*
       // Import rules
 
       // Static analysis
@@ -417,7 +416,6 @@ export default [
       // Style guide
       "import/extensions": ["error", "always", { "ts": "never", "tsx": "never" }],
       "import/no-duplicates": "warn",
-      */
 
       // JSDoc rules
       "jsdoc/check-access": "error",
